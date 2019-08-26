@@ -2,6 +2,11 @@ package _100;
 
 import java.util.Scanner;
 
+/**
+ * Solution for UVa problem 100 The 3n + 1 problem
+ * @author Lucas Borg
+ * 2019-08-17
+ */
 public class Main {
 
 	private static Scanner input;
