@@ -1,10 +1,8 @@
 package _386;
 
-import java.util.AbstractSequentialList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Scanner;
 
 /**
  * Solution for UVa problem 386 Perfect Cubes
@@ -21,10 +19,10 @@ public class Main {
 		c = 2;
 		d = 2;
 		list_cubes = new HashMap<Integer, LinkedList<Integer[]>>();
-		while (a < 200) {
-			while (b < 200) {
-				while (c < 200) {
-					while (d < 200) {
+		while (a <= 200) {
+			while (b <= 200) {
+				while (c <= 200) {
+					while (d <= 200) {
 						if (a * a * a < b * b * b + c * c * c + d * d * d)
 							d = 200;
 						else if (a * a * a == b * b * b + c * c * c + d * d * d) {
@@ -41,7 +39,7 @@ public class Main {
 									System.out.println("Cube = " + a + ", Triple = (" + b + "," + c + "," + d + ")");
 								}
 							}
-							d = 200;
+							d = 201;
 						}
 						d++;
 					}
